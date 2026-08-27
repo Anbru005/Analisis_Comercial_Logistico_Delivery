@@ -1,26 +1,29 @@
-## 📊 Análisis Comercial y Logístico de Delivery (Excel End-to-End)
+# 📊 Análisis Comercial y Operativo de Delivery (Excel End-to-End)
 
-🔗 **[Haz clic aquí para interactuar con el Dashboard en vivo en OneDrive](PEGA_AQUÍ_TU_ENLACE)**
+[🔗 **Haz clic aquí para interactuar con el Dashboard en vivo en OneDrive**](PEGA_AQUÍ_TU_ENLACE_DE_ONEDRIVE)
 
-El objetivo de este proyecto es analizar de principio a fin el flujo operativo de una aplicación de delivery, integrando datos de tráfico (funnel), transacciones (pedidos) y puntos de venta. A través de este análisis, se busca identificar cuellos de botella logísticos, evaluar la rentabilidad por canal y proponer estrategias basadas en datos para impulsar las conversiones.
+El objetivo de este proyecto es evaluar el rendimiento comercial, la rentabilidad transaccional y la eficiencia operativa de una aplicación de delivery. Integrando datos de tráfico, transacciones y puntos de venta, se diseñó un modelo relacional para proponer estrategias de optimización basadas en datos.
 
 ## 🛠️ Arquitectura y Procesamiento de Datos
 
-* **ETL con Power Query:** Limpieza, normalización y unión (merge/append) de más de [NÚMERO] registros provenientes de las tablas `Datos_tiendas`, `Funnel_tiendas` y `Pedidos_tiendas`. Se crearon columnas calculadas críticas como tiempos de entrega, márgenes netos y ratios de conversión.
-* **Modelado Relacional (Power Pivot):** Diseño de un modelo de datos estructurado. Desarrollo de medidas DAX para KPIs dinámicos, incluyendo Ventas Totales, Margen, Ticket Promedio y Porcentaje de Cumplimiento Logístico (entregas < 45 min).
-* **Automatización (VBA):** Se implementaron macros orientadas a [DESCRIBE BREVEMENTE QUÉ AUTOMATIZASTE, ej: la actualización automática de las fuentes de datos y limpieza de filtros con un solo clic], optimizando el tiempo de reporte.
+* **ETL con Power Query:** Limpieza, normalización y consolidación de las tablas `Datos_tiendas`, `Funnel_tiendas` y `Pedidos_tiendas`.
+* **Modelado Relacional (Power Pivot):** Diseño del modelo de datos y desarrollo de medidas DAX para KPIs dinámicos.
+* **Automatización (VBA):** Implementación de macros para agilizar la actualización del reporte y limpieza de filtros.
 
-## 📈 Dashboard y Métricas Clave
+## 📈 Vista del Dashboard
 
-*(Arrastra aquí la imagen de tu dashboard principal)*
-![Dashboard Principal](dashboard_principal.png)
+*(Arrastra aquí la imagen de tu dashboard principal o de tus gráficos clave)*
+![Dashboard Ejecutivo](dashboard_principal.png)
 
-* **Desempeño Comercial:** La tienda [NOMBRE] lidera la facturación, mientras que el canal [CANAL] presenta la mejor tasa de conversión histórica.
-* **Logística y Cumplimiento:** El [PORCENTAJE]% de los pedidos superan el plazo comprometido de 45 minutos, concentrándose principalmente en la región [REGIÓN]. Existe una correlación [POSITIVA/NEGATIVA] entre el monto de venta y el tiempo promedio de entrega.
-* **Rentabilidad y Fidelización:** Los meses de [MESES] mostraron un alto volumen de ventas pero una caída en el margen debido a [RAZÓN]. La combinación de la categoría [CATEGORÍA] con el canal [CANAL] genera la mayor rentabilidad del negocio.
+## 🔍 Hallazgos Clave del Negocio
 
-## 💡 Conclusiones y Recomendaciones
+* **El Valor Oculto del Segmento Local:** Aunque las grandes cadenas (`big_chain`) lideran el volumen masivo, los negocios locales (`local_hero`) igualan la eficiencia de conversión (**16%**) con un menor tráfico (10.8M de visitas). Estratégicamente, traccionan un **Ticket Promedio superior (S/ 43.07 vs S/ 36.88)**, siendo un segmento altamente rentable.
+* **Sensibilidad de la Rentabilidad (AOV):** La ganancia de la plataforma es altamente sensible al Ticket Promedio. En periodos críticos (ej. Nov 2019), el AOV cayó a S/ 33.32. Al ser el costo logístico un gasto fijo, esta proliferación de pedidos pequeños canibaliza el margen de contribución.
+* **Fuga Crítica en el Embudo de Conversión:** De 5.4 millones de usuarios históricos que armaron un carrito, la **Tasa de Abandono se sitúa en un 50% exacto**. Perder a la mitad de los compradores potenciales en la etapa de *checkout* representa una fuga de capital masiva.
+* **Impacto de las Fricciones Logísticas:** La auditoría operativa (2019) revela que el **19% de los pedidos se entregan fuera de plazo** (>45 min). Al segmentar, los pedidos sin clasificación (zonas en blanco) disparan las demoras a un **27%**, destruyendo la experiencia del usuario y la frecuencia de compra.
 
-* **Crecimiento Comercial:** Se recomienda replicar la estrategia de la tienda [TIENDA TOP] en las sucursales de [TIENDAS BAJAS] para estandarizar la tasa de conversión.
-* **Optimización Logística:** Es crítico reestructurar las rutas o ampliar la flota en [ZONA PROBLEMÁTICA] para reducir la tasa de entregas tardías, lo cual está impactando directamente en las devoluciones de la categoría [CATEGORÍA].
-* **Impacto del Flujo de Datos:** La automatización de este pipeline en Excel demuestra que un flujo de datos estructurado reduce el tiempo operativo en un [X]% y permite transicionar de un análisis descriptivo a la toma de decisiones estratégicas.
+## 💡 Recomendaciones Estratégicas
+
+1. **Blindar el Margen (AOV):** Configurar el algoritmo para sugerir productos adicionales (*cross-selling*) antes del pago, forzando un "Ticket Mínimo Dinámico" que asegure que el margen bruto de cada viaje absorba el costo logístico de última milla.
+2. **Recuperación de Ventas (Remarketing):** Desplegar campañas automatizadas dirigidas al segmento del 50% que abandonó el carrito. A la par, es imperativo simplificar la interfaz (UI/UX) del *checkout* para reducir la fricción transaccional.
+3. **Optimización de Flota en Zonas Críticas:** Reasignar presupuesto hacia subsidios operativos para garantizar mayor disponibilidad de motorizados en zonas de alta demora. Financieramente, elevar la Tasa de Entregas a Tiempo a un estándar **>90%** es más viable que asumir el Costo de Adquisición de Clientes (CAC) por pérdida de usuarios.
