@@ -12,9 +12,7 @@ El objetivo de este proyecto es evaluar el rendimiento comercial, la rentabilida
 
 ## 📈 Vista del Dashboard
 
-*(<img width="1076" height="542" alt="Dashboard" src="https://github.com/user-attachments/assets/ad955038-8a2f-4642-a6e7-3103f65822ee" />
-)*
-![Dashboard Ejecutivo](dashboard_principal.png)
+![Dashboard Ejecutivo](Dashboard.jpeg)
 
 ## 🔍 Hallazgos Clave del Negocio
 
