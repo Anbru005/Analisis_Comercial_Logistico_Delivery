@@ -1,6 +1,6 @@
 # 📊 Análisis Comercial y Operativo de Delivery (Excel End-to-End)
 
-[🔗 **Haz clic aquí para interactuar con el Dashboard en vivo en OneDrive**](PEGA_AQUÍ_TU_ENLACE_DE_ONEDRIVE)
+[🔗 **Haz clic aquí para interactuar con el Dashboard en vivo en OneDrive**](https://1drv.ms/x/c/b6a5de71cf2b297c/IQCXrNfmjVFeQ5fX6k5fn8Z_ARnFSydafAml7sSq4yXch6o)
 
 El objetivo de este proyecto es evaluar el rendimiento comercial, la rentabilidad transaccional y la eficiencia operativa de una aplicación de delivery. Integrando datos de tráfico, transacciones y puntos de venta, se diseñó un modelo relacional para proponer estrategias de optimización basadas en datos.
 
